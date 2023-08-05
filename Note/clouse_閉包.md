@@ -43,13 +43,13 @@ window.onload = function (){
 
 ```js
 function greet(whattosay) {
-	reutnr function(name) {
-		console.log(whattosay + '' + name);
-	}
+  return function (name) {
+    console.log(whattosay + "" + name);
+  };
 }
 
-var sayHi = greet('Hi');
-sayHi('Tony');
+var sayHi = greet("Hi");
+sayHi("Tony");
 ```
 
 ## example4
