@@ -1,0 +1,53 @@
+.menu-btn {
+  background: #e0e0e0;
+  padding: 10px;
+  margin: 5px 0px 0px 0px;
+}
+
+.menu-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.drop_container {
+  display: none;
+  background-color: #017575;
+  animation: animateFromBottom 0.3s;
+}
+
+.drop_container.show {
+  display: block;
+}
+
+.drop_container.show.animate-out {
+  animation: animateToBottom 0.3s;
+}
+
+.drop_container > .item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  padding: 10px 0px 0px 0px;
+}
+
+@keyframes animateFromBottom {
+  from {
+    transform: translate3d(0, 10px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes animateToBottom {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 10px, 0);
+    opacity: 0;
+  }
+}
